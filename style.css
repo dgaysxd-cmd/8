@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterRegular.woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterMedium.woff2");
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterSemiBold.woff2");
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterBold.woff2");
+  font-display: swap;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f4f6f9;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1230px;
+}
+.gallery__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    gap: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.gallery__title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #111827;
+}
+.gallery__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  color: #f4f6f9;
+  background: #111827;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.gallery__btn:hover {
+  background: #2a3b5f;
+}
+.gallery__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.gallery-card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
+}
+.gallery-card__pic{
+  display: block;
+  max-width: 100%;
+}
+ .gallery-card__text {
+  padding: 16px;
+}
+
+.gallery-card__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #111827;
+}
+
+.gallery-card__time {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #6b7280;
